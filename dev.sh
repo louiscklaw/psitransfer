@@ -6,14 +6,14 @@ rm -rf app/node_modules
 rm -rf node_modules
 
 cd app
-  npm install &
+  npm i -D &
 cd ..
-npm install &
+npm i -D &
 
 wait
 
 cd app
-  npm run build
+  npm run dev &
 cd ..
 
-npm start
+npm run dev

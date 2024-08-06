@@ -24,6 +24,9 @@ FROM node:18-buster
 #     npm ci && \
 #     rm -rf app
 
+RUN apt update
+RUN apt install -qyy tmux
+
 EXPOSE 3000
 VOLUME ["/data"]
 WORKDIR /app
